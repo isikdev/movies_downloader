@@ -27,4 +27,4 @@ python download_movies.py
 2. Вставьте URL плейлиста YouTube когда появится запрос
 
 Видео будут сохранены в папку `downloads` в текущей директории.
-Логи скачивания сохраняются в файл `download.log`. # movies_downloader
+Логи скачивания сохраняются в файл `download.log`
