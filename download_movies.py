@@ -82,6 +82,7 @@ def get_yt_dlp_opts(cookies_file=None):
         'legacy_server_connect': True,
         'socket_timeout': 30,
         'retries': 10,
+        'extractor_args': {'youtubetab': {'skip': ['authcheck']}}
     }
 
 def clean_url(url):
@@ -218,7 +219,8 @@ async def process_playlist(playlist_url, video_limit=None):
             'extract_flat': True,
             'cookiefile': cookies_file,
             'age_limit': 99,
-            'nocheckcertificate': True
+            'nocheckcertificate': True,
+            'extractor_args': {'youtubetab': {'skip': ['authcheck']}}
         }
         
         # Получаем информацию о плейлисте
